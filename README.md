@@ -93,9 +93,40 @@ Hyperparameters, file paths, and other configurations can be modified directly w
 
 ---
 
+## ⚡️ Training the Model
+
+All training and evaluation processes can be initiated by running the `main.py` script.
+
+1.  **Navigate to the `code` directory**:
+    ```bash
+    cd code
+    ```
+
+2.  **Modify Configuration (Optional)**:
+    Hyperparameters, file paths, and other configurations can be adjusted directly within the `main` function in `code/main.py`.
+
+3.  **Execute the main script**:
+    ```bash
+    python main.py
+    ```
+    The script will load the data, build the model, split the datasets, and start the training and evaluation pipeline.
+
+---
+
+## 🔬 Inference
+
+We provide a dedicated Jupyter Notebook.
+
+**File**: `code/inference_and_case_study.ipynb`
+
+To use it, simply open the notebook in a Jupyter environment and follow the instructions in each cell.
+
+---
+
 ## 📈 Results & Tracking
 
-- **Local Results**: During training, the best-performing model (based on validation loss) will be saved to the `./result/[TIMESTAMP]/` directory. The final test set evaluation results will be printed to the console upon completion.
-- **Wandb**: This project is integrated with `wandb` (Weights & Biases) for experiment tracking. Simply log in to your `wandb` account, and all training losses and evaluation metrics will be automatically uploaded for visualization and comparison. If you prefer not to use it, set `use_wandb=False` when initializing the `MultiTaskTrainer`.
+- **Local Results**: During training, the best-performing model (based on validation loss) will be saved to a timestamped directory inside `result/`. Final test results are printed to the console.
+- **Wandb**: We use `wandb` (Weights & Biases) for experiment tracking. If you have a `wandb` account, log in before running, and all metrics will be automatically tracked. To disable this, set `use_wandb=False` in the `MultiTaskTrainer` initialization in `main.py`.
+
 
 ---
