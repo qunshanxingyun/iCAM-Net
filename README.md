@@ -128,5 +128,21 @@ To use it, simply open the notebook in a Jupyter environment and follow the inst
 - **Local Results**: During training, the best-performing model (based on validation loss) will be saved to a timestamped directory inside `result/`. Final test results are printed to the console.
 - **Wandb**: We use `wandb` (Weights & Biases) for experiment tracking. If you have a `wandb` account, log in before running, and all metrics will be automatically tracked. To disable this, set `use_wandb=False` in the `MultiTaskTrainer` initialization in `main.py`.
 
+---
+
+## 📃 Citation
+
+If you find our work useful, please cite:
+
+```bibtex
+@article{zheng2025icamnet,
+  title={iCAM-Net: Interpretable Herb–Disease Association Prediction via Cross-Channel Attention and Molecular Interaction Signals},
+  author={Zheng, Denggao and Qin, Chi and Wang, Ziyang and Li, Yu and Liu, Yu and Wang, Yunlai and Kan, Hongxing and Hu, Jili},
+  journal={Phytomedicine},
+  year={2025},
+  pages={157491},
+  doi={10.1016/j.phymed.2025.157491},
+  url={https://www.sciencedirect.com/science/article/pii/S0944711325011286}
+}
 
 ---
